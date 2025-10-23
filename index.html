@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home • My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="logo" href="index.html">
+          <img src="images/EDLogo.png" alt="ED Logo" class="logo-img" />
+          <span>Eddie's Portfolio</span>
+        </a>
+        <nav>
+          <a class="active" href="index.html">Home</a>
+          <a href="portfolio.html">Work</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <div class="hero-text">
+          <h1>Hello, I’m <span>Eddie Dao</span></h1>
+          <p class="lead">
+            I build clean, accessible websites and applications. Welcome to my
+            space on the web.
+          </p>
+          <div class="cta">
+            <a class="btn" href="portfolio.html">See my work</a>
+            <a class="btn btn-outline" href="contact.html">Get in touch</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img src="images/eddie_portrait.jpg" alt="Portrait of Eddie Dao" />
+        </div>
+      </section>
+
+      <section class="features container">
+        <h2>What I do</h2>
+        <div class="grid-3">
+          <article class="card">
+            <h3>User Experience Design</h3>
+            <p>
+              Researching, wireframing, and testing interfaces that solve real
+              user problems with clarity and empathy.
+            </p>
+          </article>
+          <article class="card">
+            <h3>User Interface Design</h3>
+            <p>
+              Building clean, consistent, and accessible interfaces using modern
+              design systems and Figma components.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Prototyping & Collaboration</h3>
+            <p>
+              Creating interactive prototypes, iterating based on feedback, and
+              collaborating with engineers and product teams.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Eddie Dao. All rights reserved.</p>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

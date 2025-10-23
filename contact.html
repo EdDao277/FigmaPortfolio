@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact • Eddie Dao</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .contact-card {
+        margin-top: 16px;
+        background: var(--panel);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        padding: 18px;
+      }
+      .contact-list {
+        list-style: none;
+        padding: 0;
+        margin: 8px 0 0;
+      }
+      .contact-list li + li {
+        margin-top: 10px;
+      }
+      .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .contact-item strong {
+        width: 72px;
+        color: var(--muted);
+        font-weight: 600;
+      }
+      .contact-actions {
+        margin-top: 14px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="logo" href="index.html">
+          <img src="images/EDLogo.png" alt="ED Logo" class="logo-img" />
+          <span>Eddie's Portfolio</span>
+        </a>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="portfolio.html">Work</a>
+          <a class="active" href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container pad-top">
+      <h1>Contact</h1>
+      <p class="lead">Reach me directly by email or phone.</p>
+
+      <section class="contact-card">
+        <ul class="contact-list">
+          <li class="contact-item">
+            <strong>Email</strong>
+            <!-- Click opens default mail client -->
+            <a href="mailto:EdDao277@gmail.com">EdDao277@gmail.com</a>
+          </li>
+          <li class="contact-item">
+            <strong>Phone</strong>
+            <!-- Click dials on mobile; on desktop it will offer calling apps -->
+            <a href="tel:+13096223722">+1 (309) 622-3722</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Eddie Dao. All rights reserved.</p>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

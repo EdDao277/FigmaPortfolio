@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Work • My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="logo" href="index.html">
+          <img src="images/EDLogo.png" alt="ED Logo" class="logo-img" />
+          <span>Eddie's Portfolio</span>
+        </a>
+        <nav>
+          <a class="active" href="index.html">Home</a>
+          <a href="portfolio.html">Work</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container pad-top">
+      <h1>Projects</h1>
+      <p class="lead">A selection of things I’ve built and collaborated on.</p>
+
+      <div class="gallery">
+        <!-- Project 1 -->
+        <article class="project-card">
+          <img
+            src="images/edu_alert.png"
+            alt="Edu Alert app mockups"
+          />
+          <div class="project-body">
+            <h3>Edu Alert App</h3>
+            <p>
+              High-fidelity mobile prototype: sign-in, course list, add/edit
+              assignments, and notifications.
+            </p>
+
+            <div class="tags">
+              <span>Figma</span><span>Mobile</span><span>UX</span
+              ><span>UI</span>
+            </div>
+
+            <div class="actions">
+              <!-- Opens the PDF in a new tab -->
+              <a
+                class="btn btn-small"
+                href="assets/EduAlert_prototype.pdf"
+                target="_blank"
+                rel="noopener"
+                >Open PDF</a
+              >
+              <a
+                class="btn btn-small btn-outline"
+                href="https://www.figma.com/design/GNdGeljgETs5K9EPCdwtZ3/Mobile-Service?node-id=0-1&t=fIKQG1JhgzoJKHCJ-1"
+                target="_blank"
+                rel="noopener"
+                >View on Figma</a
+              >
+            </div>
+
+            <!-- Inline PDF preview (collapsible) -->
+            <details class="project-preview">
+              <summary>Preview slides</summary>
+              <object
+                class="pdf-frame"
+                data="assets/EduAlert_prototype.pdf"
+                type="application/pdf"
+              >
+                <p>
+                  Your browser can’t display PDFs here.
+                  <a
+                    href="assets/EduAlert_prototype.pdf"
+                    target="_blank"
+                    rel="noopener"
+                    >Open the PDF</a
+                  >.
+                </p>
+              </object>
+            </details>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+          <img
+            src="images/mayo_clinic.png"
+            alt="Eye imaging workflow screens"
+          />
+          <div class="project-body">
+            <h3>Eye Exam App</h3>
+            <p>
+              Flow for a medical imaging capture app: auth, dashboard, patient
+              profile, capture, and end scene.
+            </p>
+
+            <div class="tags">
+              <span>Figma</span><span>Workflow</span><span>Prototype</span>
+            </div>
+
+            <div class="actions">
+              <a
+                class="btn btn-small"
+                href="assets/MayoEyeExam_prototype.pdf"
+                target="_blank"
+                rel="noopener"
+                >Open PDF</a
+              >
+              <a
+                class="btn btn-small btn-outline"
+                href="https://www.figma.com/design/yHdicW2zUCbhi4uWflLYkj/Mayo-Clinic-Modified-Scenario?node-id=0-1&t=aYTuHbl9BWPtndqT-1"
+                target="_blank"
+                rel="noopener"
+                >View on Figma</a
+              >
+            </div>
+
+            <details class="project-preview">
+              <summary>Preview slides</summary>
+              <object
+                class="pdf-frame"
+                data="assets/MayoEyeExam_prototype.pdf"
+                type="application/pdf"
+              >
+                <p>
+                  Your browser can’t display PDFs here.
+                  <a
+                    href="assets/MayoEyeExam_prototype.pdf"
+                    target="_blank"
+                    rel="noopener"
+                    >Open the PDF</a
+                  >.
+                </p>
+              </object>
+            </details>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+          <img
+            src="images/LDClassic.png"
+            alt="E-commerce prototype slides"
+          />
+          <div class="project-body">
+            <h3>LD Classics TCG Store Concept</h3>
+            <p>
+              Persona-driven storefront with browse/filter and cart/checkout
+            </p>
+
+            <div class="tags">
+              <span>Figma</span><span>E-commerce</span><span>UX</span>
+            </div>
+
+            <div class="actions">
+              <a
+                class="btn btn-small"
+                href="assets/LDClassic_tcgStore_prototype.pdf"
+                target="_blank"
+                rel="noopener"
+                >Open PDF</a
+              >
+              <a
+                class="btn btn-small btn-outline"
+                href="https://www.figma.com/design/zUdKlg63IdojCXnDkMAq4p/Retail-Store?t=HJYWAZBJjDNcy9gW-1"
+                target="_blank"
+                rel="noopener"
+                >View on Figma</a
+              >
+            </div>
+
+            <details class="project-preview">
+              <summary>Preview slides</summary>
+              <object
+                class="pdf-frame"
+                data="assets/LDClassic_tcgStore_prototype.pdf"
+                type="application/pdf"
+              >
+                <p>
+                  Your browser can’t display PDFs here.
+                  <a
+                    href="assets/LDClassic_tcgStore_prototype.pdf"
+                    target="_blank"
+                    rel="noopener"
+                    >Open the PDF</a
+                  >.
+                </p>
+              </object>
+            </details>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Eddie Dao. All rights reserved.</p>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
